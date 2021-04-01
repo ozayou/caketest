@@ -1,0 +1,660 @@
+html {
+    font-size: 62.5%;
+    /*デフォルトサイズ16pxの62.5%つまり10px,1em=10px*/
+    /*em≠rem*/
+    color: #444444;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Noto Sans CJK JP",serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #444444;
+}
+
+ul {
+  	list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+	  margin: 0 auto;
+}
+
+/*--------------------------------------
+header
+--------------------------------------*/
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header__spinner {
+  display: none;
+}
+
+.header__logo {
+  font-size: 4rem;
+  color: #48bac2;
+}
+
+.header__right {
+  display: flex;
+}
+
+.header__right ul a {
+  color: #48bac2;
+}
+
+.header__right ul {
+  display: flex;
+}
+
+.header__right li {
+  margin-right: 38px;
+
+  font-size: 1.8rem;
+  margin-top: 15px;
+}
+
+.header__right li:nth-of-type(6) {
+  margin-right: 31px;
+}
+
+.header__btn {
+  display: flex;
+  background-color: #48bac2;
+  padding: 12px 8px;
+  color: #fff;
+}
+
+.header__btn i {
+  font-size: 2.2rem;
+  margin-top: 3px;
+  margin-right: 6px;
+}
+
+.header__btn-txt {
+  font-size: 1.8rem;
+}
+
+/*--------------------------------------
+top
+--------------------------------------*/
+.top {
+  height: 668px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/photo-1551645701-0e68cfc880f0.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.top__wrapper {
+}
+
+.top__logo {
+  font-size: 4.4rem;
+  margin-bottom: 23px;
+
+}
+
+.top__txt {
+  width: 750px;
+  font-size: 2.2rem;
+  margin:  0 auto;
+}
+
+/*--------------------------------------
+subtop
+--------------------------------------*/
+.subtop {
+  padding: 67px 0 110px 0;
+  text-align: center;
+}
+
+.subtop__logo {
+  font-size: 4rem;
+  margin-bottom: 46px;
+  color: #48bac2;
+}
+
+.subtop__txt {
+  width: 590px;
+  font-size: 1.8rem;
+  margin:  0 auto;
+  line-height: 36px;
+}
+
+/*--------------------------------------
+product
+--------------------------------------*/
+.product__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__wrapper {
+
+}
+
+.product__wrapper img {
+  width: 360px;
+  height: 240px;
+}
+
+.product__txt {
+  width: 360px;
+  text-align: left;
+  line-height: 36px;
+  margin-top: 15px;
+}
+
+.product__btn {
+  background-color: #ff7385;
+  display: inline-block;
+  padding: 25px 20px 25px 89px;
+  margin-top: 35px;
+  position: relative;
+  top: 0;
+  left: 60px;
+}
+
+.product__btnwrapper {
+  display: flex;
+  color: #fff;
+}
+
+.product__btntxt {
+  margin-right: 55px;
+  font-size: 1.8rem;
+}
+
+.fa-angle-double-right {
+  margin-top: 4px;
+  font-size: 1.8rem;
+}
+
+.product__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 69px;
+}
+
+.product__sub {
+  padding: 0 15px;
+  display: none;
+}
+
+.product__sub-top, .product__sub-middle, .product__sub-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product__sub-middle, .product__sub-bottom {
+  margin-top: 60px;
+}
+
+/*--------------------------------------
+contact
+--------------------------------------*/
+
+.contact {
+  padding: 89px 0 0px 0;
+  background-image: url('../img/photo-1551645701-0e68cfc880f0.jpeg');
+  background-size: 720px auto;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.contact__inner {
+  font-size: 1.8rem;
+  display: flex;
+}
+
+.contact__logo {
+  color: #48bac2;
+  font-size: 2.8rem;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.contact__list {
+  display: flex;
+}
+
+.cotnact__line {
+  width: 2px;
+  height: 310px;
+  background-color: #5a5a5a;
+  margin-left: 24px;
+  margin-right: 29px;
+}
+
+.contact__main {
+  margin-top: 12px;
+}
+
+.contact__main li {
+  margin-bottom: 35px;
+}
+
+.contact__main li:nth-of-type(5) {
+  margin-bottom: 0px;
+}
+
+.contact__sub {
+  margin-top: 12px;
+}
+
+.contact__sub li {
+  margin-bottom: 35px;
+}
+
+.contact__sub li:nth-of-type(5) {
+  margin-bottom: 0px;
+}
+
+.contact__left {
+  padding-right: 114px;
+  white-space: nowrap;
+}
+
+.contact__right {
+  height: 500px;
+}
+
+.contact__right img {
+  /* margin-left: 114px; */
+  width: 100%;
+  /* max-width: 812px; */
+  height: 500px;
+  object-fit: cover;
+}
+
+/*--------------------------------------
+footer
+--------------------------------------*/
+
+.footer {
+  background-image: url('../img/photo-1499889808931-317a0255c0e9.jpeg');
+  color: #fff;
+  text-align: center;
+  padding-top: 69px;
+  padding-bottom: 60px;
+}
+
+.footer__logo {
+  font-size: 4rem;
+  /* color: #48bac2; */
+}
+
+.footer__access {
+  font-size: 1.8rem;
+  margin-top: 32px;
+}
+
+.footer__call {
+  font-size: 1.8rem;
+}
+
+.footer__btn {
+  background-color: #ff7385;
+  display: inline-block;
+  padding: 23px 70px;
+  margin-top: 34px;
+}
+
+.footer__btn a {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.footer__btn p {
+  font-size: 1.8rem;
+}
+
+.fa-map-marker-alt {
+  margin-right: 13px;
+  margin-top: 6px;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.footer__menu a {
+  color: #fff;
+}
+
+.footer__menu li {
+  padding: 0 17px;
+  border-right: 1px solid;
+}
+
+.footer__menu li:nth-of-type(6) {
+  border-right: initial;
+}
+
+.footer__copy {
+  margin-top: 60px;
+  font-size: 1.2rem;
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+  .header__inner{
+    padding: 25px 15px;
+  }
+
+  .header__logo {
+  font-size: 3rem;
+  color: #48bac2;
+  }
+
+  .product__main {
+    display: none;
+    padding: 0 15px;
+  }
+
+  .contact {
+    padding: 60px 15px 0px 15px;
+  }
+
+  .contact__left {
+    background-color: #fff;
+    padding-right: 80px;
+  }
+
+  .product__sub {
+  padding: 0 15px;
+  display: block;
+}
+
+}
+
+@media screen and (max-width:768px) {
+.header__inner {
+  display: none;
+}
+
+/*　ハンバーガーボタン　*/
+.hamburger {
+  display : block;
+  /* position: fixed; */
+  position: absolute;
+  z-index : 3;
+  right : 10px;
+  top   : 20px;
+  width : 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 30px;
+  height  : 2px ;
+  left    : 6px;
+  background : #48bac2;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition   : 0.3s ease-in-out;
+  transition        : 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top : 16px;
+  left: 6px;
+  background :#48bac2;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background :#48bac2;
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+.globalMenuSp {
+    color: #000;
+    /*background-color: red;*/
+    visibility: hidden;
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: #fff;
+  background: rgba(255,255,255);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .6s ease, visibility .6s ease;
+  line-height: 3;
+  padding-top: 100px;
+}
+
+nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: .4s all;
+}
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+nav.globalMenuSp ul li:hover{
+  background :#ddd;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #48bac2;
+  padding: 1em 0;
+  text-decoration :none;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+    visibility: visible;
+    opacity: 100;
+}
+
+.header__spinner {
+  display: block;
+  padding: 25px 15px;
+}
+
+.header__subleft a {
+  color: #48bac2;
+}
+
+.header__subleft p {
+  font-size: 2.5rem;
+}
+
+
+.fa-shopping-cart {
+  position: absolute;
+  top: 24px;
+  right: 60px;
+  background-color: #48bac2;
+  font-size: 2rem;
+  padding: 8px;
+}
+
+.header__nav li:nth-child(n+2) {
+  margin-left: 0px;
+}
+
+.fa-shopping-cart {
+  color: #fff;
+}
+
+/*--------------------------------------
+top
+--------------------------------------*/
+
+.top {
+  height: 668px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/photo-1551645701-0e68cfc880f0.jpeg');
+  background-size: cover;
+  background-position: 30%;
+  color: #fff;
+}
+
+
+.top__wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.top__txt {
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.8rem;
+}
+
+.subtop__wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.subtop__txt {
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.8rem;
+}
+
+/*--------------------------------------
+product
+--------------------------------------*/
+
+.product__top {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.product__wrapper:nth-child(n+2) {
+  margin-top: 90px;
+}
+
+.product__txt {
+  width: 100%;
+  text-align: center;
+}
+
+.product__btn {
+  position: relative;
+  top: 0;
+  left: 0px;
+}
+
+.product__bottom {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.product__main {
+  display: block;
+}
+
+.product__sub {
+  padding: 0 15px;
+  display: none;
+}
+
+
+/*--------------------------------------
+contact
+--------------------------------------*/
+.contact {
+  padding: 60px 0 120px 0;
+  background-image: initial;
+}
+
+.contact__inner {
+  font-size: 1.6rem;
+  display: flex;
+  flex-flow: column;
+  padding: 0 15px;
+}
+
+.contact__logo {
+  text-align: center;
+}
+
+.contact__list {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__left {
+  padding-right: 0px;
+}
+
+.contact__right {
+  display: none;
+}
+
+/*--------------------------------------
+footer
+--------------------------------------*/
+
+.footer__menu a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.footer__menu li {
+  padding: 0 14px;
+  border-right: 1px solid;
+}
+
+}
